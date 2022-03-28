@@ -1,0 +1,43 @@
+body {
+    color: #fff;
+    font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    margin: 12px 15px;
+  }
+  .original,
+  .box {
+    border-radius: 6px;
+  }
+  .original {
+    background: #eaeaed;
+    border: 1px dashed #cecfd5;
+    float: left;
+    margin: 12px 15px;
+  }
+  .box {
+    background: #2db34a;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    width: 95px;
+  }
+  .spin {
+    cursor: pointer;
+    transform-style: preserve-3d;
+  }
+  .spin:hover {
+      animation: spin 5s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  .box-1 {
+    transform: rotate(20deg);
+  }
+  .box-2 {
+    transform: rotate(-55deg);
+  }
